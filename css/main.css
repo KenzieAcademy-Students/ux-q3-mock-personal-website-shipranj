@@ -1,2 +1,31 @@
+h1 {
+  text-align: center;
+  color: purple;
+  font-weight: bold;
+}
 
-/*  Put your CSS Here */
+h2 {
+  color: black;
+  font-style: italic;
+}
+
+h3 {
+  color: black;
+  font-weight: 300;
+}
+
+p {
+  color: black;
+  font-kerning: auto;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+img {
+  border-radius: 8px;
+  width: 150px;
+}
