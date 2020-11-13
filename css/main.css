@@ -1,22 +1,43 @@
-h1 {
+.intro {
+  background-color: rgb(111, 194, 210);
+  padding: 60px;
+  color: white;
+}
+
+.intro p {
+  font-size: 20px;
+}
+
+div > p {
+  background-color: white;
+  padding: 20px;
+}
+
+#myHeader {
+  padding: 100px;
   text-align: center;
-  color: purple;
   font-weight: bold;
+  font-size: 70px;
 }
 
 h2 {
-  color: black;
-  font-style: italic;
+  font-style: normal;
+  text-align: center;
+  font-size: 50px;
 }
 
 h3 {
-  color: black;
   font-weight: 300;
+  text-align: center;
+  font-size: 40px;
 }
 
 p {
-  color: black;
+  color: rgb(35, 115, 142);
   font-kerning: auto;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
 }
 
 body {
@@ -26,6 +47,18 @@ body {
 }
 
 img {
-  border-radius: 8px;
+  border-radius: 50%;
   width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#button1 {
+  background-color: rgb(111, 165, 226);
+  display: block;
+  margin: auto;
+  color: rgb(252, 250, 250);
+  font-size: 16px;
+  cursor: pointer;
 }
