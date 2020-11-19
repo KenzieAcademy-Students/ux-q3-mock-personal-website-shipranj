@@ -5,25 +5,6 @@
   src: url("./kaushan-script/KaushanScript-Regular.otf") format("opentype");
 }
 
-#myHeader {
-  padding: 100px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 70px;
-}
-
-h2 {
-  font-style: normal;
-  text-align: center;
-  font-size: 50px;
-}
-
-h3 {
-  font-weight: 300;
-  text-align: center;
-  font-size: 40px;
-}
-
 .intro {
   background-color: rgb(111, 194, 210);
   padding: 60px;
@@ -39,24 +20,6 @@ h3 {
   border-radius: 50%;
   margin: 0 auto;
   text-align: center;
-}
-
-ul > li {
-  font-family: "Shadows Into Light", cursive;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  margin: 0 auto;
-  padding: 40px;
-  width: 120px;
-  list-style: none;
-}
-
-hr {
-  margin: 40px;
-}
-
-p {
   color: rgb(35, 115, 142);
   font-kerning: auto;
   font-style: italic;
@@ -65,23 +28,32 @@ p {
   font-family: "Shadows Into Light", cursive;
 }
 
+img {
+  padding: 20px;
+  border-radius: 50%;
+  height: 200px;
+  display: block;
+  float: left;
+}
+
+.container {
+  float: left;
+  text-align: left;
+  padding: 20px;
+  width: 700px;
+  overflow: auto;
+}
+
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-img {
-  border-radius: 50%;
-  height: 200px;
-  display: block;
-  margin: 0 auto;
+.footer {
+  float: right;
 }
 
-#button1 {
-  background-color: rgb(111, 165, 226);
-  display: block;
-  margin: 0 auto;
-  color: rgb(252, 250, 250);
-  font-size: 16px;
-  cursor: pointer;
+#nextfooter {
+  float: right;
+  color: green;
 }
