@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+@font-face {
+  font-family: "Kaushan-Script-Regular";
+  src: url("./kaushan-script/KaushanScript-Regular.otf") format("opentype");
+}
+
+.intro {
+  background-color: rgb(111, 194, 210);
+  padding: 60px;
+  color: white;
+  font-family: "Kaushan-Script-Regular";
+  font-size: 36px;
+}
+
+.resources > p {
+  background-color: rgb(254, 255, 251);
+  padding: 40px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul > li {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px;
+  width: 120px;
+  list-style: none;
+}
+
+hr {
+  margin: 40px;
+}
+
+p {
+  color: rgb(35, 115, 142);
+  font-kerning: auto;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+img {
+  border-radius: 50%;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
