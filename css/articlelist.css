@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+@font-face {
+  font-family: "Kaushan-Script-Regular";
+  src: url("./kaushan-script/KaushanScript-Regular.otf") format("opentype");
+}
+
+.intro {
+  background-color: rgb(111, 194, 210);
+  padding: 60px;
+  color: white;
+  font-family: "Kaushan-Script-Regular";
+  font-size: 36px;
+}
+
+.news > p {
+  background-color: rgb(254, 255, 251);
+  padding: 40px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(35, 115, 142);
+  font-kerning: auto;
+  font-style: italic;
+  font-size: 30px;
+  font-family: "Shadows Into Light", cursive;
+}
+
+img {
+  padding: 20px;
+  border-radius: 50%;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+#container {
+  display: flex;
+  width: 70%;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.box {
+  width: 300px;
+  height: 500px;
+  font-size: 30px;
+  text-align: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+  padding-top: 0px;
+}
+
+.one {
+  background-color: white;
+  border: 3px solid green;
+  margin: 10px;
+}
+
+.transport {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+.two {
+  background-color: white;
+  margin: 10px;
+  border: 3px solid green;
+}
+
+.three {
+  background-color: white;
+  border: 3px solid green;
+  margin: 10px;
+}
+
+.four {
+  background-color: white;
+  margin: 10px;
+  border: 3px solid green;
+}
+
+.five {
+  background-color: white;
+  margin: 10px;
+  border: 3px solid green;
+}
+
+.six {
+  background-color: white;
+  margin: 10px;
+  border: 3px solid green;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
