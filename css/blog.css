@@ -7,15 +7,22 @@
 
 .intro {
   background-color: rgb(111, 194, 210);
-  padding: 60px;
+  padding: 40px;
   color: white;
   font-family: "Kaushan-Script-Regular";
   font-size: 36px;
 }
 
+.time {
+  font-style: italic;
+  margin-left: 600px;
+  font-size: 13px;
+  text-align: center;
+}
+
 .resources > p {
   background-color: rgb(254, 255, 251);
-  padding: 40px;
+  padding: 10px;
   width: 250px;
   border-radius: 50%;
   margin: 0 auto;
@@ -39,7 +46,7 @@ img {
 .container {
   float: left;
   text-align: left;
-  padding: 20px;
+  padding: 30px;
   width: 700px;
   overflow: auto;
 }
