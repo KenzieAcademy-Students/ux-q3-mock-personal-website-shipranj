@@ -5,6 +5,11 @@
   src: url("./kaushan-script/KaushanScript-Regular.otf") format("opentype");
 }
 
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .intro {
   background-color: rgb(111, 194, 210);
   padding: 60px;
@@ -30,7 +35,7 @@
 img {
   padding: 20px;
   border-radius: 50%;
-  height: 100px;
+  width: 100px;
   display: block;
   margin: 0 auto;
 }
@@ -41,15 +46,13 @@ img {
   flex-flow: row wrap;
   align-items: center;
   margin: 0 auto;
+  background-color: rgb(111, 194, 210);
 }
 
 .box {
-  width: 300px;
-  height: 500px;
-  font-size: 30px;
-  text-align: center;
-  justify-content: space-around;
-  padding-top: 10px;
+  background-color: white;
+  margin: 10px;
+  border: 3px solid grey;
 }
 
 p {
@@ -58,49 +61,75 @@ p {
   padding-top: 0px;
 }
 
-.one {
-  background-color: white;
-  border: 3px solid green;
-  margin: 10px;
-}
-
 .transport {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 15px;
   text-align: left;
 }
+
+.one {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+  width: 300px;
+  height: 500px;
+  font-size: 30px;
+  text-align: center;
+}
+
 .two {
-  background-color: white;
-  margin: 10px;
-  border: 3px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+  width: 300px;
+  height: 500px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .three {
-  background-color: white;
-  border: 3px solid green;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+  width: 300px;
+  height: 500px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .four {
-  background-color: white;
-  margin: 10px;
-  border: 3px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+  width: 300px;
+  height: 500px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .five {
-  background-color: white;
-  margin: 10px;
-  border: 3px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+  width: 300px;
+  height: 500px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .six {
-  background-color: white;
-  margin: 10px;
-  border: 3px solid green;
-}
-
-body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+  width: 300px;
+  height: 500px;
+  font-size: 30px;
+  text-align: center;
 }
