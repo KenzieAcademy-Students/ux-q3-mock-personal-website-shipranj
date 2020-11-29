@@ -5,72 +5,118 @@
   src: url("./kaushan-script/KaushanScript-Regular.otf") format("opentype");
 }
 
-.intro {
-  background-color: rgb(111, 194, 210);
-  padding: 40px;
-  color: white;
-  font-family: "Kaushan-Script-Regular";
-  font-size: 36px;
+a {
+  color: lightblue;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 40%;
-  margin: 1px;
+/* header */
+
+.header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
 }
 
-.navbar > li {
-  font-family: "Shadows Into Light", cursive;
-  font-size: 20px;
-  font-weight: bold;
+.header ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  overflow: hidden;
+  background-color: white;
 }
 
-.navbar > li a {
-  text-align: center;
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px dashed grey;
   text-decoration: none;
 }
 
-.navbar > li a:hover {
-  color: green;
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: orange;
 }
 
-.date {
-  font-weight: 9px;
-  font-style: italic;
-  margin-left: 650px;
-}
-
-.resources > p {
-  background-color: rgb(254, 255, 251);
-  padding: 10px;
-  width: 250px;
-  border-radius: 50%;
-  margin: 0 auto;
-  text-align: center;
-  color: rgb(35, 115, 142);
-  font-kerning: auto;
-  font-style: italic;
-  font-size: 30px;
-  text-align: center;
-  font-family: "Shadows Into Light", cursive;
-}
-
-img {
-  padding: 20px;
-  border-radius: 50%;
-  height: 200px;
+.header .logo {
   display: block;
   float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
-.container {
-  float: left;
-  text-align: left;
-  padding: 30px;
-  width: 700px;
-  overflow: auto;
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: orange;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: orange;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
 }
 
 body {
@@ -78,58 +124,93 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+/* ux title */
+
+.resources {
+  padding: 120px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: rgb(254, 255, 251);
+  color: rgb(35, 115, 142);
+  font-style: italic;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+}
+
+/* date */
+
+#date {
+  text-align: center;
+  font-style: italic;
+}
+
+/* image */
+
+img {
+  padding: 90px;
+  padding-right: 10px;
+  border-radius: 50%;
+  height: 200px;
+  display: inline-block;
+  float: left;
+}
+
+/* text */
+.container {
+  margin-top: 20px;
+  padding-right: 50px;
+  float: right;
+  width: 400px;
+  text-align: left;
+}
+
+/* footer */
+
 .footer {
   float: right;
 }
 
+/* featured footer */
+
 #nextfooter {
+  padding-bottom: 10px;
   float: right;
   color: green;
 }
 
-@media only screen and (max-width: 550px) {
-  #menu {
-    width: 35px;
-    height: 30px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
+@media (min-width: 48em) {
+  .header li {
+    float: left;
   }
 
-  .bar {
-    height: 5px;
-    width: 100%;
-    background-color: green;
-    display: block;
-    border-radius: 5px;
+  .header li a {
+    padding: 20px 30px;
   }
-
-  #bar1 {
-    transform: translateY(-4px);
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
   }
-
-  #bar3 {
-    transform: translateY(4px);
-  }
-
-  .navbar {
+  .header .menu-icon {
     display: none;
   }
 
-  img {
-    width: 300px;
-    margin: 80px;
+  .resources {
+    padding-top: 130px;
+    margin-left: 500px;
+    width: 250px;
   }
 
-  .date {
-    display: none;
-  }
-
-  .footer {
-    text-align: right;
+  #date {
+    margin-left: 60px;
   }
 
   .container {
-    width: 400px;
-    text-align: center;
+    margin-top: 110px;
+    width: 870px;
+  }
+
+  #nextfooter {
+    padding-bottom: 0px;
   }
 }
